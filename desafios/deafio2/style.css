@@ -1,0 +1,37 @@
+@charset "URF=8";
+body {
+    background-image: linear-gradient(to right, #100000, #442622);
+    border-radius: 10px;
+    margin: auto;
+    
+}
+div>p {
+    display: none;
+    color: #C5A19B;
+}
+
+div:hover >p{
+            display: block;
+            color: #f7f7f7;
+            background-color: #8d635d;
+            width: 80px;
+}
+
+div {
+    color: #8d635d;
+}
+
+h1 {
+    color: #8d635d;
+    text-align: center;
+    text-shadow: 1px 1px 2px #c5a19ba8;
+    width: 600px;
+    
+}
+a {
+    color: #C5A19B;
+    text-shadow: 1px 1px 2px #c5a19b94;
+}
+p {
+    text-align: justify;
+}
