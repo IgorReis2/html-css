@@ -1,9 +1,6 @@
 @charset "URF=8";
 body {
-    background-image: linear-gradient(to right, #100000, #442622);
-    border-radius: 10px;
-    margin: auto;
-    
+    background-image: linear-gradient(to right, #100000, #442622)
 }
 div>p {
     display: none;
@@ -11,18 +8,25 @@ div>p {
 }
 
 div:hover >p{
-            display: block;
-            color: #f7f7f7;
-            background-color: #8d635d;
-            width: 80px;
+    display: block;
+    color: #f7f7f7;
+    background-color: #8d635d;
+     width: 80px;
 }
 
+body > h1 {
+   min-width: 300px;
+   max-width: 1000px;
+   margin: auto;
+   text-align:ncenter;
+ }
+ 
 div {
-    color: #8d635d;
+    color: #442622;
 }
 
 h1 {
-    color: #8d635d;
+    color: #442622;
     text-align: center;
     text-shadow: 1px 1px 2px #c5a19ba8;
     width: 600px;
