@@ -14,22 +14,27 @@ div:hover >p{
      width: 80px;
 }
 
-body > h1 {
-   min-width: 300px;
-   max-width: 1000px;
-   margin: auto;
-   text-align:ncenter;
- }
- 
+header > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
 div {
     color: #442622;
 }
 
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+}
 h1 {
     color: #442622;
     text-align: center;
     text-shadow: 1px 1px 2px #c5a19ba8;
-    width: 600px;
     
 }
 a {
