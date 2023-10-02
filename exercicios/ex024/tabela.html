@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        tr.total {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.459);
+        }
+
+        td {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 6px;
+        }
+
+        td.vasco {
+            background-color: rgba(0, 0, 0, 0.459);
+            text-align: center;
+
+        }
+
+        td#x {
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+    <!--
+        hierarquia de tabelas simples
+        TABLE = TABELA
+        TABLE ROW = LINHA DE TABELA
+        TABLE HEADER = CABEÇALHO DE TABELA
+        TABLE DATA = DADO DE TABELA
+    -->
+    <table>
+        <tr>
+            <td class="vasco">Vasco tem</td>
+            <td class="vasco">26pts</td>
+        </tr>
+        <tr>
+            <td>Vasco</td>
+            <td id="x">x</td>
+            <td>São Paulo</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Vasco</td>
+            <td id="x">x</td>
+            <td>Fortaleza</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Flamengo</td>
+            <td id="x">x</td>
+            <td>Vasco</td>
+            <td>E</td>
+        <tr>
+            <td>Vasco</td>
+            <td id="x">x</td>
+            <td>Internacional</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Goias</td>
+            <td id="x">x</td>
+            <td>Vasco</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Cuiaba</td>
+            <td id="x">x</td>
+            <td>Vasco</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Vasco</td>
+            <td id="x">x</td>
+            <td>Botafogo</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Cruzeiro</td>
+            <td id="x">x</td>
+            <td>Vasco</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>Vasco</td>
+            <td id="x">x</td>
+            <td>America-mg</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Atletico-pr</td>
+            <td id="x">x</td>
+            <td>Vasco</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>Vasco</td>
+            <td id="x">x</td>
+            <td>Corinthians</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>Gremio</td>
+            <td id="x">x</td>
+            <td>Vasco</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>Vasco</td>
+            <td id="x">x</td>
+            <td>Bragantino</td>
+            <td>V</td>
+        </tr>
+        <tr class="total">
+            <td>Pontuação</td>
+            <td>27pts</td>
+            <td>53pts</td>
+        </tr>
+    </table>
+    <h3>Calcular</h3>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma Entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>
