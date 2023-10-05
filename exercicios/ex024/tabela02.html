@@ -13,6 +13,7 @@
     table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
     }
 
     td, th {
@@ -32,6 +33,12 @@
         color: white;
     }
 
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+    }
+
     td.num {
         text-align: right;
     }
@@ -39,6 +46,10 @@
     thead {
         background-color: gray;
         color: white;
+    }
+
+    tbody > tr:nth-child(odd) {
+        background-color: lightgrey;
     }
 </style>
 <body>
