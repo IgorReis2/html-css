@@ -38,9 +38,40 @@
             background-color: rgba(54, 50, 50, 0.247);
         }
 
+        table.direita {
+            margin: -500px 400px;
+            
+        }
+
+        table.baixo {
+            margin: 600px 0px;
+            
+        }
+
+        table.esquerda {
+            margin: -1060px 400px ;
+            
+        }
+
     </style>
 </head>
 <body>
+    <h3>Calcular</h3>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma Entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
     <h1>Vasco</h1>
     <!--
         hierarquia de tabelas simples
@@ -138,21 +169,261 @@
             <td>41</td>
         </tr>
     </table>
-    <h3>Calcular</h3>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res">Resultado</div>
-    <script>
-        function somar() {
-            var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.querySelector('input#txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var s = n1 + n2
-            res.innerHTML = `A soma Entre ${n1} e ${n2} é igual a ${s}`
-        }
-    </script>
+
+
+    <table class="direita">
+        <tr>
+            <td class="vasco">Goias tem</td>
+            <td class="vasco">27pts</td>
+        </tr>
+        <tr class="casa">
+            <td>Goias</td>
+            <td id="x">x</td>
+            <td>São Paulo</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>Cuiaba</td>
+            <td id="x">x</td>
+            <td>Goias</td>
+            <td>D</td>
+        <tr>
+            <td>Fluminense</td>
+            <td id="x">x</td>
+            <td>Goias</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="casa">Goias</td>
+            <td id="x">x</td>
+            <td>Vasco</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td class="casa">Goias</td>
+            <td id="x">x</td>
+            <td>Bragantino</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>Coritiba</td>
+            <td id="x">x</td>
+            <td>Goias</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td class="casa">Goias</td>
+            <td id="x">x</td>
+            <td>Santos</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>Atletico-mg</td>
+            <td id="x">x</td>
+            <td>Goias</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="casa">Goias</td>
+            <td id="x">x</td>
+            <td>Cruzeiro</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Gremio</td>
+            <td id="x">x</td>
+            <td>Goias</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>Fortaleza</td>
+            <td id="x">x</td>
+            <td>Goias</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="casa">Goias</td>
+            <td id="x">x</td>
+            <td>America-mg</td>
+            <td>V</td>
+        </tr>
+        <tr class="total">
+            <td>Pontuação</td>
+            <td>13pts</td>
+            <td>Pontuação total</td>
+            <td>40</td>
+        </tr>
+    </table>
+
+
+
+    <table class="baixo">
+        <tr>
+            <td class="vasco">Santos tem</td>
+            <td class="vasco">30pts</td>
+        </tr>
+        <tr class="casa">
+            <td class="casa">Santos</td>
+            <td id="x">x</td>
+            <td>Bragantino</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Internacional</td>
+            <td id="x">x</td>
+            <td>Santos</td>
+            <td>D</td>
+        <tr>
+            <td class="casa">Santos</td>
+            <td id="x">x</td>
+            <td>Coritiba</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Corinthians</td>
+            <td id="x">x</td>
+            <td>Santos</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>Flamengo</td>
+            <td id="x">x</td>
+            <td>Santos</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="casa">Santos</td>
+            <td id="x">x</td>
+            <td>Cuiaba</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Goias</td>
+            <td id="x">x</td>
+            <td>Santos</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td class="casa">Santos</td>
+            <td id="x">x</td>
+            <td>São Paulp</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>Botafogo</td>
+            <td id="x">x</td>
+            <td>Santos</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="casa">Santos</td>
+            <td id="x">x</td>
+            <td>Fluminense</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>Athletico-pr</td>
+            <td id="x">x</td>
+            <td>Santos</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="casa">Santos</td>
+            <td id="x">x</td>
+            <td>Fortaleza</td>
+            <td>E</td>
+        </tr>
+        <tr class="total">
+            <td>Pontuação</td>
+            <td>15pts</td>
+            <td>Pontuação total</td>
+            <td>45</td>
+        </tr>
+    </table>
+
+
+    <table class="esquerda">
+        <tr>
+            <td class="vasco">Bahia tem</td>
+            <td class="vasco">28pts</td>
+        </tr>
+        <tr class="casa">
+            <td>Bahia</td>
+            <td id="x">x</td>
+            <td>Internacional</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td class="casa">Bahia</td>
+            <td id="x">x</td>
+            <td>Fortaleza</td>
+            <td>E</td>
+        <tr>
+            <td>Cruzeiro</td>
+            <td id="x">x</td>
+            <td>Bahia</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>Palmeiras</td>
+            <td id="x">x</td>
+            <td>Bahia</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="casa">Bahia</td>
+            <td id="x">x</td>
+            <td>Fluminense</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>Gremio</td>
+            <td id="x">x</td>
+            <td>Bahia</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="casa">Bahia</td>
+            <td id="x">x</td>
+            <td>Cuiaba</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td class="casa">Bahia</td>
+            <td id="x">x</td>
+            <td>Atletico-pr</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>Corinthians</td>
+            <td id="x">x</td>
+            <td>Bahia</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="casa">Bahia</td>
+            <td id="x">x</td>
+            <td>São Paulo</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>America-mg</td>
+            <td id="x">x</td>
+            <td>Bahia</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td class="casa">Bahia</td>
+            <td id="x">x</td>
+            <td>Atletico-mg</td>
+            <td>E</td>
+        </tr>
+        <tr class="total">
+            <td>Pontuação</td>
+            <td>12pts</td>
+            <td>Pontuação total</td>
+            <td>40</td>
+        </tr>
+    </table>
 </body>
 </html>
