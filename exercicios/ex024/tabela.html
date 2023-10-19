@@ -61,22 +61,29 @@
     </style>
 </head>
 <body>
-    <h3>Calcular</h3>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res">Resultado</div>
-    <script>
-        function somar() {
-            var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.querySelector('input#txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var s = n1 + n2
-            res.innerHTML = `A soma Entre ${n1} e ${n2} é igual a ${s}`
-        }
-    </script>
+    <h2>Calcular</h2>
+    <form action="" method="post">
+
+        <p>
+            <label for="inum1">Numero1</label>
+            <input type="number" name="num1" id="inum1" min="0" max="100" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="inum2">Numero2</label>
+            <input type="number" name="num2" id="inum2" min="0" max="100" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+    
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
     <h1>Vasco</h1>
     <!--
         hierarquia de tabelas simples
@@ -100,7 +107,7 @@
             <td>Vasco</td>
             <td id="x">x</td>
             <td>Fortaleza</td>
-            <td>E</td>
+            <td>V</td>
         </tr>
         <tr>
             <td>Flamengo</td>
@@ -169,9 +176,9 @@
         </tr>
         <tr class="total">
             <td>Pontuação</td>
-            <td>15pts</td>
+            <td>17pts</td>
             <td>Pontuação total</td>
-            <td>41</td>
+            <td>43</td>
         </tr>
     </table>
 
@@ -185,7 +192,7 @@
             <td>Goias</td>
             <td id="x">x</td>
             <td>São Paulo</td>
-            <td>E</td>
+            <td>V</td>
         </tr>
         <tr>
             <td>Cuiaba</td>
@@ -254,9 +261,9 @@
         </tr>
         <tr class="total">
             <td>Pontuação</td>
-            <td>13pts</td>
+            <td>15pts</td>
             <td>Pontuação total</td>
-            <td>40</td>
+            <td>42</td>
         </tr>
     </table>
 
@@ -356,7 +363,7 @@
             <td>Bahia</td>
             <td id="x">x</td>
             <td>Internacional</td>
-            <td>E</td>
+            <td>V</td>
         </tr>
         <tr  class="casa">
             <td>Bahia</td>
@@ -425,9 +432,9 @@
         </tr>
         <tr class="total">
             <td>Pontuação</td>
-            <td>12pts</td>
+            <td>15pts</td>
             <td>Pontuação total</td>
-            <td>40</td>
+            <td>42</td>
         </tr>
     </table>
 
