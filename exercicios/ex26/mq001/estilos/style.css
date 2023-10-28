@@ -21,8 +21,22 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+i#aa {
+    background-color: rgb(32, 32, 32);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#aa:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
 }
 
 menu ul {
