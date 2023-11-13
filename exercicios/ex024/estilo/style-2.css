@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 300px;
+    border-collapse: collapse;
+}
+
+tr.total {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+td {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 6px;
+}
+
+td.vasco {
+    background-color: rgba(0, 0, 0, 0.459);
+    text-align: center;
+
+}
+
+td#x {
+   text-align: center; 
+}
+
+tbody tr.casa {
+    background-color: rgba(54, 50, 50, 0.247);
+}
+table {
+    margin-bottom: 10px;
+}
+
+table.direita {
+    margin-bottom: 10px;
+    
+}
+
+
+table.baixoo {
+   margin-bottom: 10px;
+    
+}
+
+
+table.esquerda {
+    margin-bottom: 10px;
+    
+}
+
+table.baixoesquerda {
+    margin-bottom: 10px;
+}
+
